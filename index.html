@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laman utama web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .hero {
+            position: relative;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .detel {
+            color: #000;
+            margin-bottom: 125px; /* Mengurangi jarak antara tulisan dan gambar */
+            position: relative;
+        }
+
+        .detel h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .detel h1 span {
+            font-size: 24px;
+            color: #5f6396;
+        }
+
+        .detel p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .beranda-button {
+            background-color: #212121;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 50px;
+        }
+
+        .beranda-button:hover {
+            background-color: #000;
+        }
+
+        .images {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 15px; /* Mengurangi jarak antara gambar dan tombol */
+        }
+
+        .images img {
+            width: 250px;
+            height: auto;
+            position: absolute;
+            transition: transform 0.5s ease; /* Efek gerakan */
+        }
+
+        .images:hover img {
+            transform: translateY(-10px); /* Gerakan ke atas saat dihover */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logonm.png" alt="Logo" class="logo">
+        </nav>
+        <div class="detel">
+            <h1>HELOO WELCOME TO <span>TOKO BUKU NAMIMAW</span></h1>
+            <p>Temukan berbagai koleksi buku terbaik kami</p>
+        </div>
+        <div class="images">
+            <img src="back.png" alt="Background" class="backg">
+            <img src="lgyk2.png" alt="Namira" class="lgyk2">
+        </div>
+        <a href="beranda.php" class="beranda-button">Beranda</a>
+    </div>
+</body>
+</html>
